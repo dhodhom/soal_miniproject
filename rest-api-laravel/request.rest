@@ -1,0 +1,162 @@
+// GET ALL DATA
+###
+// -------------> PELANGGAN
+GET http://localhost:8000/api/pelanggan
+
+###
+// -------------> BARANG
+GET http://localhost:8000/api/barang
+
+###
+// -------------> PENJUALAN
+GET http://localhost:8000/api/penjualan
+
+###
+// -------------> ITEM PENJUALAN
+GET http://localhost:8000/api/itempenjualan
+
+
+
+
+
+// CREATE DATA
+###
+// -------------> PELANGGAN
+POST http://localhost:8000/api/pelanggan
+Content-Type: application/json
+
+{
+   "id_pelanggan": "PELANGGAN_11",
+   "nama": "Lukman",
+   "domisili": "JKT-SEL",
+   "jenis_kelamin": "PRIA"
+}
+
+###
+// -------------> BARANG
+POST http://localhost:8000/api/barang
+Content-Type: application/json
+
+{
+   "kode": "BRG_11",
+   "nama": "Buku Tamu",
+   "kategori": "ATK",
+   "harga": 10000
+}
+
+###
+// -------------> PENJUALAN
+POST http://localhost:8000/api/penjualan
+Content-Type: application/json
+
+{
+   "id_nota": "NOTA_10",
+   "tgl": "2022-10-06",
+   "kode_pelanggan": "PELANGGAN_1",
+   "subtotal": 10000
+}
+
+###
+// -------------> ITEM PENJUALAN
+POST http://localhost:8000/api/itempenjualan
+Content-Type: application/json
+
+{
+   "nota": "NOTA_10",
+   "kode_barang": "BRG_1",
+   "qty": 1
+}
+
+
+
+
+
+// UPDATE DATA
+###
+// -------------> PELANGGAN
+PUT http://localhost:8000/api/pelanggan/11
+Content-Type: application/json
+
+{
+   "id_pelanggan": "PELANGGAN_11",
+   "nama": "Lukman n",
+   "domisili": "JKT-SEL",
+   "jenis_kelamin": "PRIA"
+}
+
+###
+// -------------> BARANG
+PUT http://localhost:8000/api/barang/1
+Content-Type: application/json
+
+{
+   "kode": "BRG_11",
+   "nama": "Buku Tamu",
+   "kategori": "ATK",
+   "harga": 10000
+}
+
+###
+// -------------> PENJUALAN
+PUT http://localhost:8000/api/penjualan/1
+Content-Type: application/json
+
+{
+   "id_nota": "NOTA_10",
+   "tgl": "2022-10-06",
+   "kode_pelanggan": "PELANGGAN_1",
+   "subtotal": 10000
+}
+
+###
+// -------------> ITEM PENJUALAN
+PUT http://localhost:8000/api/itempenjualan/1
+Content-Type: application/json
+
+{
+   "nota": "NOTA_10",
+   "kode_barang": "BRG_1",
+   "qty": 1
+}
+
+
+
+
+
+// UPDATE DATA
+###
+// -------------> PELANGGAN
+GET http://localhost:8000/api/pelanggan/1
+
+###
+// -------------> BARANG
+GET http://localhost:8000/api/barang/1
+
+###
+// -------------> PENJUALAN
+GET http://localhost:8000/api/penjualan/2
+
+###
+// -------------> ITEM PENJUALAN
+GET http://localhost:8000/api/itempenjualan/1
+
+
+
+
+
+// DELETE DATA
+###
+// -------------> PELANGGAN
+DELETE http://localhost:8000/api/pelanggan/11
+
+###
+// -------------> BARANG
+DELETE http://localhost:8000/api/barang/1
+
+###
+// -------------> PENJUALAN
+DELETE http://localhost:8000/api/penjualan/2
+
+###
+// -------------> ITEM PENJUALAN
+DELETE http://localhost:8000/api/itempenjualan/1
