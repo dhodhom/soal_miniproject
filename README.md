@@ -1,5 +1,5 @@
-# soal_miniproject
-Soal Mini Project PT. Unggul Mitra Solusi
+# jawaban soal_miniproject
+Jawaban Soal Mini Project PT. Unggul Mitra Solusi
 1. sistem API berbasis web dengan menggunakan Rest-API Laravel
     folder : rest-api-laravel
 2. sistem interface berbasis web menggunakan CodeIgniter / React.js:
